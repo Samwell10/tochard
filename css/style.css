@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FC4B03;
+    --primary: #36c056;
     --secondary: #8D9297;
     --light: #F8F9FA;
     --dark: #182333;
@@ -35,12 +35,35 @@
     font-weight: 500;
     transition: .5s;
 }
-
+.my-button{
+    background: linear-gradient(to right top, #b0ff0e, #90f031, #71e042, #54d04e, #36c056);
+    color: white; /* Adjust text color for better contrast */
+    border: none; /* Optional: Remove border */
+    text-decoration: none; /* Remove underline for the link */
+    display: inline-block; /* Ensures button-like behavior */
+    transition: all 0.3s ease;
+}
+.my-button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to left top, #b0ff0e, #90f031, #71e042, #54d04e, #36c056);;
+}
+.bg-gradient{
+    background: linear-gradient(to right top, #b0ff0e, #90f031, #71e042, #54d04e, #36c056) !important;
+}
+.bg-gradient-text{
+    background: linear-gradient(to right top, #b0ff0e, #90f031, #71e042, #54d04e, #36c056) !important;
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text itself transparent */
+    color: transparent; /* Ensure text is transparent for other browsers */
+    display: inline-block; 
+}
 .btn.btn-primary,
 .btn.btn-outline-primary:hover {
     color: #FFFFFF;
 }
-
+.border-primary-new{
+    border-color:#079c2a !important;
+}
 .btn-square {
     width: 38px;
     height: 38px;
@@ -107,6 +130,9 @@
     .navbar .navbar-nav {
         margin-top: 25px;
         border-top: 1px solid #EEEEEE;
+    }
+    .logo{
+        width: 30%;
     }
 }
 
